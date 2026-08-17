@@ -55,7 +55,7 @@ class TestClassifyText:
 
         call_args = mock_http_client.post.call_args
         body = call_args.kwargs.get("json") or call_args[1].get("json")
-        assert body["model"] == "gemma3:4b"
+        assert body["model"] == "gemma4:31b"
 
     def test_markdown_json_code_block(self, ai_service, mock_http_client):
         json_response = '```json\n{"labels": ["news"], "primaryCategory": "news", "confidence": 0.8}\n```'
@@ -112,7 +112,7 @@ class TestAnalyzeSentiment:
 
         call_args = mock_http_client.post.call_args
         body = call_args.kwargs.get("json") or call_args[1].get("json")
-        assert body["model"] == "ministral-3:3b"
+        assert body["model"] == "glm-5.2"
 
     def test_negative_sentiment(self, ai_service, mock_http_client):
         json_response = '{"overallSentiment": "negative", "sentimentScore": -0.75, "emotions": ["anger", "disappointment"], "confidence": 0.88}'
@@ -163,7 +163,7 @@ class TestSummarizeText:
 
         call_args = mock_http_client.post.call_args
         body = call_args.kwargs.get("json") or call_args[1].get("json")
-        assert body["model"] == "ministral-3:8b"
+        assert body["model"] == "mistral-large-3:675b"
 
     def test_single_key_point(self, ai_service, mock_http_client):
         json_response = '{"summary": "Brief summary.", "keyPoints": ["Main point"], "wordCount": 2}'
@@ -210,7 +210,7 @@ class TestDetectIntent:
 
         call_args = mock_http_client.post.call_args
         body = call_args.kwargs.get("json") or call_args[1].get("json")
-        assert body["model"] == "gemma3:12b"
+        assert body["model"] == "minimax-m3"
 
     def test_command_intent(self, ai_service, mock_http_client):
         json_response = '{"primaryIntent": "turn_off_lights", "secondaryIntents": ["smart_home"], "intentCategory": "command", "confidence": 0.95}'
@@ -279,10 +279,10 @@ class TestModelRoutingIntegration:
         service = AIService(http_client=mock_http_client, router=mock_router)
 
         tasks_and_models = [
-            (lambda: service.classify_text("text"), "gemma3:4b"),
-            (lambda: service.analyze_sentiment("text"), "ministral-3:3b"),
-            (lambda: service.summarize_text("text"), "ministral-3:8b"),
-            (lambda: service.detect_intent("text"), "gemma3:12b"),
+            (lambda: service.classify_text("text"), "gemma4:31b"),
+            (lambda: service.analyze_sentiment("text"), "glm-5.2"),
+            (lambda: service.summarize_text("text"), "mistral-large-3:675b"),
+            (lambda: service.detect_intent("text"), "minimax-m3"),
         ]
 
         responses = [
