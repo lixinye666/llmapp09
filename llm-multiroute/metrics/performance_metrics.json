@@ -1439,12 +1439,396 @@
       "task_type": "classify",
       "model": "gemma4:31b",
       "latency_seconds": 0.9775
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.562296+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0002
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.596415+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0002
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.605257+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.614602+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.623408+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0002
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.632725+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0002
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.641241+00:00",
+      "task_type": "sentiment",
+      "model": "glm-5.2",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.668155+00:00",
+      "task_type": "sentiment",
+      "model": "glm-5.2",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.677022+00:00",
+      "task_type": "sentiment",
+      "model": "glm-5.2",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.686230+00:00",
+      "task_type": "sentiment",
+      "model": "glm-5.2",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.694667+00:00",
+      "task_type": "sentiment",
+      "model": "glm-5.2",
+      "latency_seconds": 0.0002
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.703476+00:00",
+      "task_type": "summarize",
+      "model": "mistral-large-3:675b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.729965+00:00",
+      "task_type": "summarize",
+      "model": "mistral-large-3:675b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.738841+00:00",
+      "task_type": "summarize",
+      "model": "mistral-large-3:675b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.747634+00:00",
+      "task_type": "summarize",
+      "model": "mistral-large-3:675b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.756739+00:00",
+      "task_type": "summarize",
+      "model": "mistral-large-3:675b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.765254+00:00",
+      "task_type": "intent",
+      "model": "minimax-m3",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.792433+00:00",
+      "task_type": "intent",
+      "model": "minimax-m3",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.801203+00:00",
+      "task_type": "intent",
+      "model": "minimax-m3",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.809882+00:00",
+      "task_type": "intent",
+      "model": "minimax-m3",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.818403+00:00",
+      "task_type": "intent",
+      "model": "minimax-m3",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.828045+00:00",
+      "task_type": "intent",
+      "model": "minimax-m3",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.837037+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.845291+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0002
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.853828+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.861050+00:00",
+      "task_type": "sentiment",
+      "model": "glm-5.2",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.868363+00:00",
+      "task_type": "summarize",
+      "model": "mistral-large-3:675b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.875420+00:00",
+      "task_type": "intent",
+      "model": "minimax-m3",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.884722+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.893285+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.901852+00:00",
+      "task_type": "sentiment",
+      "model": "glm-5.2",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:06:35.910980+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.585745+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0002
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.672293+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.682603+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.692124+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.701534+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.710541+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.719896+00:00",
+      "task_type": "sentiment",
+      "model": "glm-5.2",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.747573+00:00",
+      "task_type": "sentiment",
+      "model": "glm-5.2",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.757510+00:00",
+      "task_type": "sentiment",
+      "model": "glm-5.2",
+      "latency_seconds": 0.0002
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.766991+00:00",
+      "task_type": "sentiment",
+      "model": "glm-5.2",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.775894+00:00",
+      "task_type": "sentiment",
+      "model": "glm-5.2",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.785176+00:00",
+      "task_type": "summarize",
+      "model": "mistral-large-3:675b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.811951+00:00",
+      "task_type": "summarize",
+      "model": "mistral-large-3:675b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.822145+00:00",
+      "task_type": "summarize",
+      "model": "mistral-large-3:675b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.831109+00:00",
+      "task_type": "summarize",
+      "model": "mistral-large-3:675b",
+      "latency_seconds": 0.0002
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.839922+00:00",
+      "task_type": "summarize",
+      "model": "mistral-large-3:675b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.849020+00:00",
+      "task_type": "intent",
+      "model": "minimax-m3",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.875898+00:00",
+      "task_type": "intent",
+      "model": "minimax-m3",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.885232+00:00",
+      "task_type": "intent",
+      "model": "minimax-m3",
+      "latency_seconds": 0.0002
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.895156+00:00",
+      "task_type": "intent",
+      "model": "minimax-m3",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.904196+00:00",
+      "task_type": "intent",
+      "model": "minimax-m3",
+      "latency_seconds": 0.0002
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.913312+00:00",
+      "task_type": "intent",
+      "model": "minimax-m3",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.922099+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.931507+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.940376+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.947953+00:00",
+      "task_type": "sentiment",
+      "model": "glm-5.2",
+      "latency_seconds": 0.0002
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.956395+00:00",
+      "task_type": "summarize",
+      "model": "mistral-large-3:675b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.964149+00:00",
+      "task_type": "intent",
+      "model": "minimax-m3",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.974034+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.983674+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:50.992790+00:00",
+      "task_type": "sentiment",
+      "model": "glm-5.2",
+      "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:15:51.002182+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "latency_seconds": 0.0001
     }
   ],
   "summary": {
     "p50_latency": 0.0001,
-    "p95_latency": 1.4636,
-    "avg_latency": 0.1314,
-    "total_requests": 240
+    "p95_latency": 1.0322,
+    "avg_latency": 0.1038,
+    "total_requests": 304
   }
 }
