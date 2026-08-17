@@ -1,6 +1,7 @@
-from flask import Flask, render_template, request, jsonify
 import requests
-from config import BACKEND_URL, FLASK_PORT, DEBUG
+from flask import Flask, jsonify, render_template, request
+
+from config import BACKEND_URL, DEBUG, FLASK_PORT
 
 app = Flask(__name__)
 
@@ -28,8 +29,10 @@ def proxy_analysis(analysis_type):
         return jsonify({'error': 'Cannot connect to backend service'}), 502
     except requests.exceptions.Timeout:
         return jsonify({'error': 'Backend service timed out'}), 504
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
+    except requests.exceptions.RequestException as e:
+        return jsonify({'error': str(e)}), 502
+    except ValueError as e:
+        return jsonify({'error': f'Invalid response from backend: {e}'}), 502
 
 
 if __name__ == '__main__':

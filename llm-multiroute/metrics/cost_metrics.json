@@ -1911,11 +1911,19 @@
       "input_tokens": 0,
       "output_tokens": 0,
       "total_tokens": 0
+    },
+    {
+      "timestamp": "2026-08-17T05:31:21.480933+00:00",
+      "task_type": "classify",
+      "model": "gemma4:31b",
+      "input_tokens": 86,
+      "output_tokens": 33,
+      "total_tokens": 119
     }
   ],
   "summary": {
-    "total_input_tokens": 2483,
-    "total_output_tokens": 1121,
-    "total_requests": 239
+    "total_input_tokens": 2569,
+    "total_output_tokens": 1154,
+    "total_requests": 240
   }
 }
