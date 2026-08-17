@@ -87,7 +87,7 @@ class SecretsPresentDetector(Validator):
         matched = [name for name, pattern in _SECRET_PATTERNS.items() if pattern.search(value)]
         if matched:
             redacted = value
-            for name, pattern in _SECRET_PATTERNS.values():
+            for name, pattern in _SECRET_PATTERNS.items():
                 redacted = pattern.sub("[REDACTED_SECRET]", redacted)
             return FailResult(
                 error_message=f"Potential secret(s) detected: {matched}",
