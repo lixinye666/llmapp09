@@ -1823,12 +1823,42 @@
       "task_type": "classify",
       "model": "gemma4:31b",
       "latency_seconds": 0.0001
+    },
+    {
+      "timestamp": "2026-08-17T06:33:03.198400+00:00",
+      "task_type": "sentiment",
+      "model": "glm-5.2",
+      "latency_seconds": 2.9781
+    },
+    {
+      "timestamp": "2026-08-17T06:33:08.617729+00:00",
+      "task_type": "sentiment",
+      "model": "glm-5.2",
+      "latency_seconds": 5.3244
+    },
+    {
+      "timestamp": "2026-08-17T06:33:13.354943+00:00",
+      "task_type": "sentiment",
+      "model": "glm-5.2",
+      "latency_seconds": 4.7213
+    },
+    {
+      "timestamp": "2026-08-17T06:33:18.107020+00:00",
+      "task_type": "sentiment",
+      "model": "glm-5.2",
+      "latency_seconds": 4.7362
+    },
+    {
+      "timestamp": "2026-08-17T06:33:21.450846+00:00",
+      "task_type": "sentiment",
+      "model": "glm-5.2",
+      "latency_seconds": 3.3263
     }
   ],
   "summary": {
     "p50_latency": 0.0001,
-    "p95_latency": 1.0322,
-    "avg_latency": 0.1038,
-    "total_requests": 304
+    "p95_latency": 1.5849,
+    "avg_latency": 0.1703,
+    "total_requests": 309
   }
 }
