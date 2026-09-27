@@ -68,6 +68,11 @@ jobs:
         working-directory: promptfoo-tests
         run: npx promptfoo@latest eval -c intent.yaml
 
+      - name: Print backend logs on evaluation failure
+        if: failure()
+        run: docker compose logs llm-multiroute
+        working-directory: .
+
       - name: Tear down backend
         if: always()
         run: docker compose down
