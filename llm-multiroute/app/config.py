@@ -14,9 +14,9 @@ class Settings:
 
     # Names available through the direct Ollama cloud API.
     OLLAMA_MODEL_CLASSIFY: str = os.getenv("OLLAMA_MODEL_CLASSIFY", "gemma4:31b")
-    OLLAMA_MODEL_SENTIMENT: str = os.getenv("OLLAMA_MODEL_SENTIMENT", "glm-5.2")
-    OLLAMA_MODEL_SUMMARIZE: str = os.getenv("OLLAMA_MODEL_SUMMARIZE", "mistral-large-3:675b")
-    OLLAMA_MODEL_INTENT: str = os.getenv("OLLAMA_MODEL_INTENT", "minimax-m3")
+    OLLAMA_MODEL_SENTIMENT: str = os.getenv("OLLAMA_MODEL_SENTIMENT", "gemma4:31b")
+    OLLAMA_MODEL_SUMMARIZE: str = os.getenv("OLLAMA_MODEL_SUMMARIZE", "gemma4:31b")
+    OLLAMA_MODEL_INTENT: str = os.getenv("OLLAMA_MODEL_INTENT", "gemma4:31b")
 
     # Guardrails: which detections block the request (400) vs. log-only.
     # PII is always redacted rather than blocked. Off by default so the

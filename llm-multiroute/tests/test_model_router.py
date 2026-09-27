@@ -13,17 +13,17 @@ class TestModelRouter:
     def test_get_model_sentiment(self):
         router = ModelRouter()
         model = router.get_model(TaskType.SENTIMENT)
-        assert model == "glm-5.2"
+        assert model == "gemma4:31b"
 
     def test_get_model_summarize(self):
         router = ModelRouter()
         model = router.get_model(TaskType.SUMMARIZE)
-        assert model == "mistral-large-3:675b"
+        assert model == "gemma4:31b"
 
     def test_get_model_intent(self):
         router = ModelRouter()
         model = router.get_model(TaskType.INTENT)
-        assert model == "minimax-m3"
+        assert model == "gemma4:31b"
 
     def test_get_routes_returns_all_tasks(self):
         router = ModelRouter()
@@ -38,15 +38,14 @@ class TestModelRouter:
         router = ModelRouter()
         routes = router.get_routes()
         assert routes["classify"] == "gemma4:31b"
-        assert routes["sentiment"] == "glm-5.2"
-        assert routes["summarize"] == "mistral-large-3:675b"
-        assert routes["intent"] == "minimax-m3"
+        assert routes["sentiment"] == "gemma4:31b"
+        assert routes["summarize"] == "gemma4:31b"
+        assert routes["intent"] == "gemma4:31b"
 
-    def test_each_task_has_unique_model(self):
+    def test_default_tasks_use_verified_free_model(self):
         router = ModelRouter()
         routes = router.get_routes()
-        models = list(routes.values())
-        assert len(models) == len(set(models)), "Each task should route to a different model"
+        assert set(routes.values()) == {"gemma4:31b"}
 
 
 class TestModelRouterCustomConfig:
