@@ -6,7 +6,11 @@ WORKDIR /app
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir --upgrade "setuptools>=78.1.1" \
-    && pip install --no-cache-dir -r requirements.txt
+    && pip install --no-cache-dir -r requirements.txt \
+    && rm -rf /usr/local/lib/python3.12/site-packages/pip \
+              /usr/local/bin/pip \
+              /usr/local/bin/pip3 \
+              /usr/local/bin/pip3.12
 
 COPY . .
 
