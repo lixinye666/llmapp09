@@ -15,3 +15,7 @@ Use the same default in the local Docker Compose environment, application settin
 ## Verification
 
 Run the backend test suite, push the change to `main`, rerun the failed DeepEval and PromptFoo workflows, and monitor their GitHub Actions results.
+
+## Sentiment evaluation relevance
+
+The generic answer-relevancy rubric incorrectly requires a structured sentiment response to repeat the input's topic. Use a sentiment-specific relevance rubric instead: it must assess the input's sentiment and emotional tone, but does not need to restate subjects, entities, or logistical details. This preserves the response contract and the schema, correctness, and emotion-accuracy checks.
