@@ -13,10 +13,10 @@ class Settings:
     OLLAMA_API_KEY: str = os.getenv("OLLAMA_API_KEY", "")
 
     # Per-route model assignments (must be available on Ollama cloud)
-    OLLAMA_MODEL_CLASSIFY: str = os.getenv("OLLAMA_MODEL_CLASSIFY", "gemma4:31b")
-    OLLAMA_MODEL_SENTIMENT: str = os.getenv("OLLAMA_MODEL_SENTIMENT", "glm-5.2")
-    OLLAMA_MODEL_SUMMARIZE: str = os.getenv("OLLAMA_MODEL_SUMMARIZE", "mistral-large-3:675b")
-    OLLAMA_MODEL_INTENT: str = os.getenv("OLLAMA_MODEL_INTENT", "minimax-m3")
+    OLLAMA_MODEL_CLASSIFY: str = os.getenv("OLLAMA_MODEL_CLASSIFY", "gemma4:31b-cloud")
+    OLLAMA_MODEL_SENTIMENT: str = os.getenv("OLLAMA_MODEL_SENTIMENT", "glm-5.2:cloud")
+    OLLAMA_MODEL_SUMMARIZE: str = os.getenv("OLLAMA_MODEL_SUMMARIZE", "mistral-large-3:675b-cloud")
+    OLLAMA_MODEL_INTENT: str = os.getenv("OLLAMA_MODEL_INTENT", "minimax-m3:cloud")
 
     # Guardrails: which detections block the request (400) vs. log-only.
     # PII is always redacted rather than blocked. Off by default so the

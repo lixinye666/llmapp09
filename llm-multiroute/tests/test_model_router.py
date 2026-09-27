@@ -8,22 +8,22 @@ class TestModelRouter:
     def test_get_model_classify(self):
         router = ModelRouter()
         model = router.get_model(TaskType.CLASSIFY)
-        assert model == "gemma4:31b"
+        assert model == "gemma4:31b-cloud"
 
     def test_get_model_sentiment(self):
         router = ModelRouter()
         model = router.get_model(TaskType.SENTIMENT)
-        assert model == "glm-5.2"
+        assert model == "glm-5.2:cloud"
 
     def test_get_model_summarize(self):
         router = ModelRouter()
         model = router.get_model(TaskType.SUMMARIZE)
-        assert model == "mistral-large-3:675b"
+        assert model == "mistral-large-3:675b-cloud"
 
     def test_get_model_intent(self):
         router = ModelRouter()
         model = router.get_model(TaskType.INTENT)
-        assert model == "minimax-m3"
+        assert model == "minimax-m3:cloud"
 
     def test_get_routes_returns_all_tasks(self):
         router = ModelRouter()
@@ -37,10 +37,10 @@ class TestModelRouter:
     def test_get_routes_returns_correct_models(self):
         router = ModelRouter()
         routes = router.get_routes()
-        assert routes["classify"] == "gemma4:31b"
-        assert routes["sentiment"] == "glm-5.2"
-        assert routes["summarize"] == "mistral-large-3:675b"
-        assert routes["intent"] == "minimax-m3"
+        assert routes["classify"] == "gemma4:31b-cloud"
+        assert routes["sentiment"] == "glm-5.2:cloud"
+        assert routes["summarize"] == "mistral-large-3:675b-cloud"
+        assert routes["intent"] == "minimax-m3:cloud"
 
     def test_each_task_has_unique_model(self):
         router = ModelRouter()
