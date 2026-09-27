@@ -1,3 +1,4 @@
+import logging
 import time
 
 import httpx
@@ -11,6 +12,8 @@ from app.dto.summary_response import SummaryResponse
 from app.guardrails import guardrails_engine
 from app.monitoring import metrics_store
 from app.router.model_router import ModelRouter, TaskType, model_router
+
+logger = logging.getLogger(__name__)
 
 langfuse = get_client()
 
@@ -50,6 +53,14 @@ class AIService:
                 "temperature": self.temperature,
             },
         )
+        if response.is_error:
+            logger.error(
+                "Ollama API rejected %s with model %s: HTTP %s %s",
+                task_type,
+                model,
+                response.status_code,
+                response.reason_phrase,
+            )
         response.raise_for_status()
         latency = time.monotonic() - start
 
